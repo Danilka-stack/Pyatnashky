@@ -7,11 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Cell.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface PlayField : NSObject
+@interface PlayField : NSObject 
+
+
+
+@property NSInteger height;
+@property NSInteger width;
+@property NSMutableArray *cells;
+
+
+
+-(instancetype)initWithSizeHeight:(NSInteger)height width:(NSInteger)width;
+-(NSInteger)coordinatesOfEmptyCell;
+-(BOOL)methodLeft:(NSInteger)coordinate;
+-(BOOL)methodRight:(NSInteger)coordinate;
+-(BOOL)methodButtom:(NSInteger)coordinate;
+-(BOOL)methodTop:(NSInteger)coordinate;
+-(BOOL)checkOfCondition;
+
 
 @end
 
-NS_ASSUME_NONNULL_END
+

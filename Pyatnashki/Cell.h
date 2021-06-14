@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface Cell : NSObject
+
+@property NSInteger state;
+@property NSInteger coordinate;
+@property NSInteger number;
 
 @end
 
-NS_ASSUME_NONNULL_END
