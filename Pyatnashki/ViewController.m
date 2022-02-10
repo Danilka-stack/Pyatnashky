@@ -428,7 +428,7 @@
 
                     if(b == YES){
 
-                        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"You are winner" message:@"You are genius like Oleksandr Kosylov" preferredStyle:UIAlertControllerStyleAlert];
+                        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"The end" message:@"You are genius!" preferredStyle:UIAlertControllerStyleAlert];
 
                         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil];
                         [alert addAction:cancelAction];
